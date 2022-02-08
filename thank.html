@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />	
+	<title>Спасибо за заказ!</title>
+</head>
+<body>
+	<div class="thank-wrapper">
+		<div>
+			<h1>Спасибо большое за заявку!</h1>
+			<h2>Ожидайте, в ближайшее время мы с вами свяжемся.</h2>
+			<p>Через 5 секунд вы буду автоматически перенаправлены на главную страницу. Хорошего вам дня)</p>
+		</div>
+	</div>
+	<div class="thankback"></div>
+	<script type="text/javascript">
+		window.onload = function() {
+			function forwarding(){
+				location="index.php";
+			}
+			setTimeout(forwarding, 5000);
+		}
+	</script>
+</body>
+</html>
